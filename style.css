@@ -525,3 +525,90 @@ p, li, a, span {
 html {
   scroll-behavior: smooth;
 }
+
+/* ===== Mobile Navbar Fix ===== */
+@media(max-width:768px){
+  .navbar {
+    position: fixed;                 /* top navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;         /* center wrapper */
+    align-items: center;
+    padding: 6px 0;
+    border-radius: 0 0 12px 12px;
+    background: rgba(0,0,0,0.95);   /* dark for visibility */
+    border: 0.5px solid rgba(0,200,255,0.12); /* thin subtle border */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9999;                   /* always on top */
+  }
+
+  /* Scrollable inner wrapper for icons */
+  .nav-icons-left-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;               /* scrollable if icons overflow */
+    gap: 12px;
+    padding: 0 6px;
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar */
+  .nav-icons-left-wrapper::-webkit-scrollbar { display: none; }
+  .nav-icons-left-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .nav-icons-left {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-icons-left li { list-style: none; }
+
+  .nav-icons-left li a img {
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 0 6px rgba(0,200,255,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .nav-icons-left li a img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 12px var(--sky), 0 0 24px rgba(0,200,255,0.25);
+  }
+
+  /* Theme toggle inline with icons */
+  #theme-toggle {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Ensure content is not hidden behind navbar */
+  body { padding-top: 70px; }
+}
+
+/* Ultra-small phones <=360px */
+@media(max-width:360px){
+  .navbar {
+    height: 55px;
+    border: 0.4px solid rgba(0,200,255,0.10); /* thinner border for tiny screens */
+  }
+  .nav-icons-left-wrapper { gap: 8px; padding: 0 4px; }
+  .nav-icons-left li a img { width: 30px; height: 30px; }
+  #theme-toggle { width: 32px; height: 32px; font-size: 14px; }
+}
