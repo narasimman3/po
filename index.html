@@ -1,168 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Narasimman S | Full Stack Developer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Narasimman S | Java Developer | Spring Boot Developer</title>
+
+    <meta name="description"
+        content="Narasimman S Portfolio - Java Developer, Spring Boot Developer, Full Stack Developer, MySQL, REST APIs, Linux/Unix">
+
+    <meta name="keywords"
+        content="Java Developer, Spring Boot, Full Stack Developer, MySQL, Portfolio, Software Engineer">
+
+    <meta name="author" content="Narasimman S">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar Left -->
-<header>
-  <nav class="navbar">
-    <ul class="nav-icons-left">
-      <li><a href="#home"><img src="images/home.jpg" alt="Home" title="Home"></a></li>
-      <li><a href="#about"><img src="images/education.jpg" alt="Education" title="Education"></a></li>
-      <li><a href="#projects"><img src="images/project.jpg" alt="Projects" title="Projects"></a></li>
-      <li><a href="#skills"><img src="images/skill.jpg" alt="Skills" title="Skills"></a></li>
-      <li><a href="#contact"><img src="images/contact.png" alt="Contact" title="Contact"></a></li>
-      <li><a href="#" id="back-to-home"><img src="images/back.jpg" alt="back" title="back"></a></li>
-    </ul>
+<!-- ================= LOADER ================= -->
 
-    <!-- Back to Top button on left -->
-    <!-- <button id="back-to-top"><img src="images/back.jpg" alt="Back to Top"></button> -->
-     <!-- Back to Top button -->
-<!-- <button id="back-to-top">↑</button> -->
+<div id="loader">
+    <div class="loader-ring"></div>
+</div>
 
+<!-- ================= HEADER ================= -->
 
-    <!-- Theme toggle -->
-    <!-- <button id="theme-toggle">🌙</button> -->
-  </nav>
+<header class="header">
+
+    <div class="logo">
+        <h2>Narasimman S</h2>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#freelance">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
 </header>
 
-<!-- Home Section -->
-<section id="home" class="section">
-  <div class="section-card home-photo">
-    <img src="images/NARASIMMAN.jpg" alt="Narasimman S" class="section-img">
-    <div class="section-text">
-      <h1 class="glow-text left-to-center">Hi, I'm Narasimman S</h1>
-      <h3 class="glow-text right-to-center">Aspiring Junior Java Software Developer<h3></h3>
-<p class="small-text">
-  Passionate about <span class="highlight">Java full-stack development</span> and creating <span class="highlight">efficient, interactive software</span>.<br>
-  A <span class="highlight">quick learner</span> and <span class="highlight">team player</span>, always eager to <span class="highlight">improve skills</span> and explore <span class="highlight">new technologies</span>.
-</p>
+<!-- ================= HERO ================= -->
 
-      <a href="NARASIMMAN.S.pdf" download class="btn">Download CV</a>
+<section id="home" class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-image">
+
+            <img src="images/NARASIMMAN.jpg"
+                 alt="Narasimman S">
+
+        </div>
+
+        <div class="hero-content">
+
+            <h4>Hello, I'm</h4>
+
+            <h1>Narasimman S</h1>
+
+            <h2>
+                <span id="typing-text"></span>
+            </h2>
+
+            <p>
+
+                Passionate about
+                <span class="highlight">
+                    Java full-stack development
+                </span>
+                and creating
+                <span class="highlight">
+                    efficient, interactive software
+                </span>.
+
+                A
+                <span class="highlight">
+                    quick learner
+                </span>
+                and
+                <span class="highlight">
+                    team player
+                </span>,
+                always eager to improve skills and explore new technologies.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="NARASIMMAN.S.pdf"
+                   download
+                   class="btn primary-btn">
+
+                    Download CV
+
+                </a>
+
+                <a href="#contact"
+                   class="btn secondary-btn">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
+
 </section>
 
-<!-- About Section -->
+<!-- ================= EDUCATION ================= -->
+
 <section id="about" class="section">
-  <div class="section-card plain">
-    <img src="images/about.jpg" alt="about" class="section-img">
-    <div class="section-text">
-      <h2>Education</h2>
-      <p>B.Tech- Information Technology, The Kavery Engineering College 2023-2027, CGPA: 8.35</p>
-      <p>HSC- Higher Secondary Course, Government Hr School, Perumbalai 2021-2022</p>
-      <p>SSLC- Secondary School Course, Government Hr School, Perumbalai 2019-2020</p>
+
+    <div class="section-title">
+        <h2>Education</h2>
     </div>
-  </div>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <img src="images/about.jpg" alt="Education">
+
+            <div class="education-content">
+
+                <h3>B.Tech - Information Technology</h3>
+
+                <p>
+                    The Kavery Engineering College
+                </p>
+
+                <span>
+                    2023 - 2027 | CGPA : 8.35
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-content">
+
+                <h3>Higher Secondary Course</h3>
+
+                <p>
+                    Government Hr School, Perumbalai
+                </p>
+
+                <span>
+                    2021 - 2022
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-content">
+
+                <h3>Secondary School Course</h3>
+
+                <p>
+                    Government Hr School, Perumbalai
+                </p>
+
+                <span>
+                    2019 - 2020
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- Projects Section -->
+<!-- ================= PROJECTS ================= -->
+
 <section id="projects" class="section">
-  <h2>Projects</h2>
-  <h3>Java Projects</h3>
-  <div class="project-list">
-    <div class="project-card">
-      <img src="images/symposium.jpg" alt="Symposium Management System">
-      <div class="overlay"><a href="https://github.com/narasimman3/Symposium-Management-System.git" target="_blank">View Code →</a></div>
-      <h3>Symposium Management System</h3>
+
+    <div class="section-title">
+        <h2>Projects</h2>
     </div>
-    <div class="project-card">
-      <img src="images/hospital.jpg" alt="Hospital Management System">
-      <div class="overlay"><a href="https://github.com/narasimman3/Hospital_Management_System.git" target="_blank">View Code →</a></div>
-      <h3>Hospital Management System</h3>
-    </div>
-    <div class="project-card">
-      <img src="images/edutrack (2).jpg" alt="EduTrack System">
-      <div class="overlay"><a href="https://github.com/narasimman3/Edutrack_1.git" target="_blank">View Code →</a></div>
-      <h3>EduTrack System</h3>
-    </div>
+
+    <h3 class="category-title">
+        Java Projects
+    </h3>
+
+    <div class="project-grid">
+
         <div class="project-card">
-      <img src="images/bank.jpg" alt="Core Bank">
-      <div class="overlay"><a href="https://github.com/narasimman3/Core-Banking-.git" target="_blank">View Code →</a></div>
-      <h3>Core Banking</h3>
+
+            <img src="images/symposium.jpg"
+                 alt="Symposium">
+
+            <div class="project-content">
+
+                <h3>
+                    Symposium Management System
+                </h3>
+
+                <p>
+                    Java Application
+                </p>
+
+                <a href="https://github.com/narasimman3/Symposium-Management-System.git"
+                   target="_blank">
+
+                    View Code
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="images/hospital.jpg"
+                 alt="Hospital">
+
+            <div class="project-content">
+
+                <h3>
+                    Hospital Management System
+                </h3>
+
+                <p>
+                    Java Application
+                </p>
+
+                <a href="https://github.com/narasimman3/Hospital_Management_System.git"
+                   target="_blank">
+
+                    View Code
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="images/edutrack (2).jpg"
+                 alt="EduTrack">
+
+            <div class="project-content">
+
+                <h3>
+                    EduTrack System
+                </h3>
+
+                <p>
+                    Java Application
+                </p>
+
+                <a href="https://github.com/narasimman3/Edutrack_1.git"
+                   target="_blank">
+
+                    View Code
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="images/bank.jpg"
+                 alt="Bank">
+
+            <div class="project-content">
+
+                <h3>
+                    Core Banking
+                </h3>
+
+                <p>
+                    Java Application
+                </p>
+
+                <a href="https://github.com/narasimman3/Core-Banking-.git"
+                   target="_blank">
+
+                    View Code
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-  </div>
+    <h3 class="category-title">
+        Python Projects
+    </h3>
 
-  <h3>Python Projects</h3>
-  <div class="project-list">
-    <div class="project-card">
-      <img src="images/weather.jpg" alt="Weather App">
-      <div class="overlay"><a href="https://github.com/narasimman3/weather.git" target="_blank">View Code →</a></div>
-      <h3>Weather App</h3>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="images/weather.jpg" alt="Weather">
+            <div class="project-content">
+                <h3>Weather App</h3>
+                <a href="https://github.com/narasimman3/weather.git" target="_blank">
+                    View Code
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/password.jpg" alt="Password">
+            <div class="project-content">
+                <h3>Password Generator</h3>
+                <a href="https://github.com/narasimman3/password.git" target="_blank">
+                    View Code
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/calculator.jpg" alt="Calculator">
+            <div class="project-content">
+                <h3>Calculator</h3>
+                <a href="https://github.com/narasimman3/calculator.git" target="_blank">
+                    View Code
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/todo.jpg" alt="Todo">
+            <div class="project-content">
+                <h3>Todo App</h3>
+                <a href="https://github.com/narasimman3/todo.git" target="_blank">
+                    View Code
+                </a>
+            </div>
+        </div>
+
     </div>
-    <div class="project-card">
-      <img src="images/password.jpg" alt="Password Generator">
-      <div class="overlay"><a href="https://github.com/narasimman3/password.git" target="_blank">View Code →</a></div>
-      <h3>Password Generator</h3>
-    </div>
-    <div class="project-card">
-      <img src="images/calculator.jpg" alt="Calculator">
-      <div class="overlay"><a href="https://github.com/narasimman3/calculator.git" target="_blank">View Code →</a></div>
-      <h3>Calculator</h3>
-    </div>
-    <div class="project-card">
-      <img src="images/todo.jpg" alt="Todo App">
-      <div class="overlay"><a href="https://github.com/narasimman3/todo.git" target="_blank">View Code →</a></div>
-      <h3>Todo App</h3>
-    </div>
-  </div>
+
 </section>
 
-<!-- Skills Section -->
+<!-- Skills, Freelancer Services, Contact and Footer
+     will continue in Part 2 because the HTML is large. -->
+
+     <!-- ================= SKILLS ================= -->
+
 <section id="skills" class="section">
-  <h2>Tools</h2>
-  <div class="skill-list">
-    <div class="skill-card"><img src="images/vscode.jpg" alt="vscode"><divclass="skill-overlay"><span>Vs Code</span></div>
-    <div class="skill-card"><img src="images/linux.jpg" alt="linux"><diclass="skill-overlay"><span>linux(Ubuntu)</span></div>
-    <div class="skill-card"><img src="images/putty.jpg" alt="putty"><class="skill-overlay"><span>PuTTY</span></div>
-    <div class="skill-card"><img src="images/eclips.jpg" alt="eclips"><class="skill-overlay"><span>Eclipse</div>
-    <div class="skill-card"><img src="images/winscp.jpg" alt="winscp"><class="skill-overlay"><span>WinSCP</div>
-    </div>
-    
 
-  <h2>Skills</h2>
-  <div class="skill-list">
-    <div class="skill-card"><img src="images/java.jpg" alt="Java"><div class="skill-overlay"><span>Java</span></div></div>
-    <div class="skill-card"><img src="images/python.jpg" alt="Python"><div class="skill-overlay"><span>Python</span></div></div>
-    <div class="skill-card"><img src="images/springboot.jpg" alt="Spring Boot"><div class="skill-overlay"><span>Spring Boot</span></div></div>
-    <div class="skill-card"><img src="images/html.jpg" alt="HTML"><div class="skill-overlay"><span>HTML</span></div></div>
-    <div class="skill-card"><img src="images/css.jpg" alt="CSS"><div class="skill-overlay"><span>CSS</span></div></div>
-    <div class="skill-card"><img src="images/js.jpg" alt="JavaScript"><div class="skill-overlay"><span>JavaScript</span></div></div>
-    <div class="skill-card"><img src="icon/Mysql.png" alt="MySQL"><div class="skill-overlay"><span>MySQL</span></div></div>
-    <div class="skill-card"><img src="icon/Github.png" alt="Git & Github"><div class="skill-overlay"><span>Git & Github</span></div></div>
-  </div>
+    <div class="section-title">
+        <h2>Tools & Technologies</h2>
+    </div>
+
+    <h3 class="category-title">
+        Tools
+    </h3>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <img src="images/vscode.jpg" alt="VS Code">
+            <h4>VS Code</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/linux.jpg" alt="Linux">
+            <h4>Linux (Ubuntu)</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/putty.jpg" alt="PuTTY">
+            <h4>PuTTY</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/eclips.jpg" alt="Eclipse">
+            <h4>Eclipse</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/winscp.jpg" alt="WinSCP">
+            <h4>WinSCP</h4>
+        </div>
+
+    </div>
+
+    <h3 class="category-title">
+        Skills
+    </h3>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <img src="images/java.jpg" alt="Java">
+            <h4>Java</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/python.jpg" alt="Python">
+            <h4>Python</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/springboot.jpg" alt="Spring Boot">
+            <h4>Spring Boot</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/html.jpg" alt="HTML">
+            <h4>HTML</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/css.jpg" alt="CSS">
+            <h4>CSS</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/js.jpg" alt="JavaScript">
+            <h4>JavaScript</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="icon/Mysql.png" alt="MySQL">
+            <h4>MySQL</h4>
+        </div>
+
+        <div class="skill-card">
+            <img src="icon/Github.png" alt="GitHub">
+            <h4>Git & GitHub</h4>
+        </div>
+
+    </div>
+
 </section>
 
-<!-- Contact Section -->
+<!-- ================= FREELANCE ================= -->
+
+<section id="freelance" class="section">
+
+    <div class="section-title">
+        <h2>Freelance Services</h2>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Java Development</h3>
+            <p>
+                Custom Java applications and desktop software solutions.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Spring Boot Development</h3>
+            <p>
+                Backend development using Spring Boot and REST APIs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Website Development</h3>
+            <p>
+                Responsive and modern websites using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Database Design</h3>
+            <p>
+                MySQL database design and integration.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>API Development</h3>
+            <p>
+                RESTful API development and backend integration.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Software Maintenance</h3>
+            <p>
+                Application enhancement, debugging and optimization.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
 <section id="contact" class="section">
-  <div class="section-card contact-container">
-    <img src="images/contact.png" alt="Contact" class="section-img">
-    <div class="section-text">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:narasimman120@gmail.com">snarasimman12@gmail.com</a></p>
-      <p>Location: Dharmapuri, Tamil Nadu</p>
-      <div class="social-icons">
-        <a href="https://github.com/narasimman3" target="_blank"><img src="icon/Github.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/narasimman-s-4451b8252" target="_blank"><img src="images/linkedin.jpg" alt="GitHub"></a>
-        <a href="https://www.instagram.com/_.vaathi__" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.facebook.com/share/1CPYEWhWmS/" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
-        <a href="https://wa.me/6374122099" target="_blank"><img src="images/whatsapp.jpg" alt="WhatsApp"></a>
-        <a href="tel:+916374122099"><img src="images/phone.jpg" alt="Phone"></a>
-      </div>
+
+    <div class="section-title">
+        <h2>Contact Me</h2>
     </div>
-  </div>
+
+    <div class="contact-container">
+
+        <div class="contact-image">
+
+            <img src="images/contact.png"
+                 alt="Contact">
+
+        </div>
+
+        <div class="contact-content">
+
+            <h3>
+                Let's Connect
+            </h3>
+
+            <p>
+
+                Email :
+                <a href="mailto:snarasimman12@gmail.com">
+                    snarasimman12@gmail.com
+                </a>
+
+            </p>
+
+            <p>
+                Location : Dharmapuri, Tamil Nadu
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/narasimman3"
+                   target="_blank">
+
+                    <img src="icon/Github.png"
+                         alt="GitHub">
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/narasimman-s-4451b8252"
+                   target="_blank">
+
+                    <img src="images/linkedin.jpg"
+                         alt="LinkedIn">
+
+                </a>
+
+                <a href="https://www.instagram.com/_.vaathi__"
+                   target="_blank">
+
+                    <img src="images/instagram.jpg"
+                         alt="Instagram">
+
+                </a>
+
+                <a href="https://www.facebook.com/share/1CPYEWhWmS/"
+                   target="_blank">
+
+                    <img src="images/facebook.jpg"
+                         alt="Facebook">
+
+                </a>
+
+                <a href="https://wa.me/6374122099"
+                   target="_blank">
+
+                    <img src="images/whatsapp.jpg"
+                         alt="WhatsApp">
+
+                </a>
+
+                <a href="tel:+916374122099">
+
+                    <img src="images/phone.jpg"
+                         alt="Phone">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-  <p>© 2025 Narasimman S. All Rights Reserved.</p>
+
+    <div class="footer-container">
+
+        <h3>
+            Narasimman S
+        </h3>
+
+        <p>
+            Aspiring Junior Java Software Developer
+        </p>
+
+        <p>
+            Java | Spring Boot | MySQL | HTML | CSS | JavaScript
+        </p>
+
+<p>
+    © <span id="year"></span> Narasimman S.
+    All Rights Reserved.
+</p>
+
+    </div>
+
 </footer>
 
-<script src="script.js" defer></script>
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="backToTop">
+    ↑
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<script src="script.js"></script>
+
 </body>
 </html>
